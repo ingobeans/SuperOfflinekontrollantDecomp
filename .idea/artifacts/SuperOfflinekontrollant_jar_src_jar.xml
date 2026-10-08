@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SuperOfflinekontrollant.jar.src:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SuperOfflinekontrollant_jar_src_jar</output-path>
+    <root id="archive" name="SuperOfflinekontrollant.jar.src.jar">
+      <element id="module-output" name="SuperOfflinekontrollant.jar.src" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../jackson-core-2.9.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../jackson-annotations-2.9.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../jackson-databind-2.9.9.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

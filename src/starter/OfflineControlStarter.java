@@ -17,7 +17,7 @@
 /*    */ public class OfflineControlStarter {
 /*    */   private static ServerSocket lockSocket;
 /*    */   
-/*    */  static void main() {
+/*    */  public static void main(String[] args) {
 /*    */     try {
 /* 23 */       SwingUtilities.invokeAndWait(() -> {
 /*    */             int spinnerWidth = 300;
