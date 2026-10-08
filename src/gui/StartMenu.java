@@ -152,7 +152,7 @@
 /* 152 */     pC.setOpaque(false);
 /* 153 */     pE.setOpaque(false);
 /* 154 */     JLabel labelW = new JLabel("");
-/* 155 */     JLabel labelC = new JLabel("OFFLINEKONTROLL");
+/* 155 */     JLabel labelC = new JLabel("OFFLINEKONTROLL (definitivt inte fusk)");
 /* 156 */     JLabel labelE = new JLabel("Version: 1.02");
 /* 157 */     labelC.setFont(new Font("Consolas", 1, 30));
 /* 158 */     labelE.setFont(new Font("Consolas", 0, 10));
