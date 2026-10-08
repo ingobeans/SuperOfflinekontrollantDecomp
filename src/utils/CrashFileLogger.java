@@ -44,7 +44,7 @@
 /*    */   }
 /*    */   
 /*    */   public static void log(String message) {
-/* 47 */     writer.println(timestamp() + " - " + timestamp());
+/* 47 */     writer.println(timestamp() + " - " + message);
 /*    */   }
 /*    */   
 /*    */   private static String timestamp() {
