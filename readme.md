@@ -10,3 +10,6 @@ de ändrade raderna av källkoden är: [ElevSender.java](https://github.com/ingo
 
 
 jag gjorde också en python server [mock-server.py](./mock-server.py) som simulerar din server, eftersom jag inte har koden för den. detta gör att jag faktiskt kan testa att det skulle funka, vilket det verkar som att det skulle :>
+
+
+<img width=700 src="https://cdn.hackclub.com/01a11c6f-c1e3-75fc-ac91-faf761827a21/paste-1791478449921.png">
