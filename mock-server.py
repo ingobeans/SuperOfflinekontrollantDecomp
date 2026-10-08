@@ -20,3 +20,7 @@ while True:
 
     if data["type"] == 292: # are you there?
         send_response({"messageType":292,"responseOK":True},addr)
+    if data["type"] == 109: # register user
+        send_response({"messageType":109,"responseOK":True},addr)
+    if data["type"] == 355: # submit exam
+        send_response({"messageType":355,"responseOK":True},addr)
