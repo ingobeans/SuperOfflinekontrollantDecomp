@@ -139,7 +139,9 @@
 /* 139 */       if (this.isSubmitting) {
 /*     */         continue;
 /*     */       }
-/* 142 */       if (hasInternetWithPingTest()) {
+
+                // fusk kod här :)
+/* 142 */       if (false && hasInternetWithPingTest()) {
 /* 143 */         this.sleepTime = 10000L;
 /* 144 */         this.firstTimeOffline = true;
 /* 145 */         if (!this.beginning) {
@@ -149,7 +151,7 @@
 /* 149 */             this.firstTimeOnline = false;
 /*     */           } 
 /*     */         }  continue;
-/*     */       } 
+/*     */       }
 /* 153 */       this.beginning = false;
 /* 154 */       this.firstTimeOnline = true;
 /* 155 */       if (this.firstTimeOffline) {

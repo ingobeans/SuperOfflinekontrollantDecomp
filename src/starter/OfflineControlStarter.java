@@ -1,24 +1,23 @@
 /*    */ package starter;
 /*    */ import java.awt.BorderLayout;
 /*    */ import java.awt.Color;
-/*    */ import java.awt.Component;
 /*    */ import java.awt.Dimension;
 /*    */ import java.awt.FlowLayout;
 /*    */ import java.io.IOException;
 /*    */ import java.net.ServerSocket;
-/*    */ import javax.swing.JFrame;
-/*    */ import javax.swing.JLabel;
-/*    */ import javax.swing.JOptionPane;
-/*    */ import javax.swing.JPanel;
-/*    */ import javax.swing.JProgressBar;
-/*    */ import javax.swing.SwingUtilities;
+/*    */ import javax.swing.*;
+/*    */
+/*    */
+/*    */
+/*    */
+/*    */
 /*    */ import theController.ElevSender;
 /*    */ import utils.CrashFileLogger;
 /*    */ 
 /*    */ public class OfflineControlStarter {
 /*    */   private static ServerSocket lockSocket;
 /*    */   
-/*    */   public static void main(String[] args) {
+/*    */  static void main() {
 /*    */     try {
 /* 23 */       SwingUtilities.invokeAndWait(() -> {
 /*    */             int spinnerWidth = 300;
@@ -37,8 +36,8 @@
 /*    */             progress.setForeground(Color.RED);
 /*    */             spinner.add(progress, "South");
 /*    */             spinner.pack();
-/*    */             spinner.setDefaultCloseOperation(3);
-/*    */             spinner.setLocationRelativeTo((Component)null);
+/*    */             spinner.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+/*    */             spinner.setLocationRelativeTo(null);
 /*    */             spinner.setVisible(true);
 /*    */           });
 /* 44 */     } catch (Exception e) {
@@ -52,7 +51,7 @@
 /* 52 */       System.exit(0);
 /*    */     } 
 /*    */     
-/* 55 */     Thread.setDefaultUncaughtExceptionHandler((Thread.UncaughtExceptionHandler)new CrashFileLogger());
+/* 55 */     Thread.setDefaultUncaughtExceptionHandler(new CrashFileLogger());
 /* 56 */     CrashFileLogger.log("Program startar.");
 /*    */     
 /* 58 */     new ElevSender();
