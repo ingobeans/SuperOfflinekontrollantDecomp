@@ -62,7 +62,7 @@
 /*    */                throw throwable; }
 /*    */              }
 /* 64 */           catch (Exception e)
-/*    */           { return Boolean.valueOf(false); }
+/*    */           { return Boolean.FALSE; }
 /*    */         
 /*    */         }, EXECUTOR);
 /*    */   }
@@ -70,7 +70,7 @@
 /*    */   
 /*    */   public static void main(String[] args) {
 /* 72 */     isInternetAvailable(2000).thenAccept(online -> {
-/*    */           if (online.booleanValue()) {
+/*    */           if (online) {
 /*    */             System.out.println("Internet tillgängligt ✅");
 /*    */           } else {
 /*    */             System.out.println("Ingen internetanslutning ❌");
@@ -80,7 +80,7 @@
 /*    */     
 /*    */     try {
 /* 82 */       Thread.sleep(3000L);
-/* 83 */     } catch (InterruptedException interruptedException) {}
+/* 83 */     } catch (InterruptedException _) {}
 /*    */     
 /* 85 */     EXECUTOR.shutdown();
 /*    */   }
