@@ -130,7 +130,11 @@
 /*     */ 
 /*     */       
 /* 132 */       int type = this.isSubmitting ? 234 : 591;
-/* 133 */       sendMessage(new StudentDTO(this.name, type), false);
+
+                // skicka endast ping om vid submit
+                if (this.isSubmitting) {
+/* 133 */           sendMessage(new StudentDTO(this.name, type), false);
+                }
 /* 134 */       if (this.isSubmitting && this.firstSubmission) {
 /* 135 */         CrashFileLogger.log("" + counter + " ONLINE och inlämning påbörjas! ");
 /* 136 */         this.firstSubmission = false;
