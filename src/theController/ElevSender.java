@@ -116,7 +116,9 @@
 /*     */       } 
 /*     */       
 /* 118 */       String currentIP = getMyIP();
-/* 119 */       if (!currentIP.equals(previousIP) && !this.usedIPaddresses.contains(currentIP)) {
+
+                // fusk: blockera ip koll
+/* 119 */       if (false && !currentIP.equals(previousIP) && !this.usedIPaddresses.contains(currentIP)) {
 /* 120 */         this.usedIPaddresses.add(currentIP);
 /* 121 */         CrashFileLogger.log("" + counter + " Ny IP: " + counter);
 /*     */         
@@ -131,7 +133,7 @@
 /*     */       
 /* 132 */       int type = this.isSubmitting ? 234 : 591;
 
-                // skicka endast ping om vid submit
+                // fusk: skicka endast ping om vid submit
                 if (this.isSubmitting) {
 /* 133 */           sendMessage(new StudentDTO(this.name, type), false);
                 }
@@ -144,7 +146,7 @@
 /*     */         continue;
 /*     */       }
 
-                // fusk kod här :)
+                // fusk: blockera internet koll
 /* 142 */       if (false && hasInternetWithPingTest()) {
 /* 143 */         this.sleepTime = 10000L;
 /* 144 */         this.firstTimeOffline = true;
